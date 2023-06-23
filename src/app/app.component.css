@@ -1,0 +1,26 @@
+.container {
+    background: linear-gradient(45deg, #d0deff, #eef4ff, #cecece,  #ffffff);
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+    height: 700px;
+    width: 2000px;
+    --bs-gutter-x: 0rem;
+}
+
+.principal {
+    background: linear-gradient(45deg, #0142cf, #3667cf, #5f8cee, #7fa2ee, #aec1eb);
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}

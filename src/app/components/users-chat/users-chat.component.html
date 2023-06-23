@@ -1,0 +1,20 @@
+<h3 class="ps-4 pt-2">Usuarios en Firechat</h3>
+<hr>
+<div class="usuarios px-5 py-2">
+    <div class="card mt-2" style="width: 400px; height: 170px;" *ngFor="let usuario of _cs.usuarios">
+        <div class="row no-gutters">
+            <div class="col-sm-5">
+                <img class="rounded-circle py-3 px-4" src="{{usuario.photo}}" alt="Suresh Dasari Card">
+            </div>
+            <div class="col-sm-7 ps-0">
+                <div class="card-body ps-0">
+                    <h5 class="card-title py-0" style="font-size: 17px;">{{usuario.nombre}}</h5>
+                    <p class="card-text py-0" style="font-size: 11px;">{{usuario.email}}</p>
+                    <p class="card-text py-0" style="font-size: 11px;" *ngIf="_cs.usuario.uid == usuario.uid">(Tú)</p>
+                    <a href="#" class="btn btn-primary" (click)="_cs.agregarSala()">Mensaje</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

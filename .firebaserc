@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "firechat-7b9da": {
+      "hosting": {
+        "firechat": [
+          "firechat-7b9da"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "firechat-7b9da"
+  }
+}
